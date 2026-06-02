@@ -1,33 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chipify</title>
-    <meta name="description" content="Chipify is coming soon. Get ready for the next generation of tech.">
+    <title>Chipify - Passion For Innovation</title>
+    <meta name="description" content="Chipify develops smart embedded electronics and wireless solutions designed for the next generation of connected devices.">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div class="container">
-        <div class="logo-container">
-            <img src="logo.png" alt="Chipify Logo" class="logo">
-            <p class="tagline">
-                <span class="typewriter">Wireless & Smart Electronics Products</span>
-            </p>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <img src="logo/Untitled (222 x 222 px).svg" alt="Chipify Logo" class="nav-logo">
+            <div class="nav-links">
+                <a href="#product">Product</a>
+                <a href="#why-chipify">Why Chipify</a>
+                <a href="#building">Currently Building</a>
+                <a href="#contact" class="btn-primary">Contact Us</a>
+            </div>
         </div>
+    </nav>
 
-        <div class="coming-soon-container">
-            <h1 class="coming-soon-text">COMING SOON</h1>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Passion For <span class="highlight">Innovation</span></h1>
+            <p class="hero-subtitle">Chipify develops smart embedded electronics and wireless solutions designed for the next generation of connected devices.</p>
+            <p class="hero-text">From BLE modules to intelligent lighting and display systems, we focus on performance, reliability, and innovation.</p>
+            <div class="hero-actions">
+                <a href="#product" class="btn-primary">View Featured Product</a>
+                <a href="#contact" class="btn-secondary">Get in Touch</a>
+            </div>
         </div>
+        <div class="hero-glow"></div>
+    </header>
 
-        <nav class="footer-links" aria-label="Legal">
-            <a href="terms.html">Terms of Service</a>
-            <a href="privacy.html">Privacy Policy</a>
-        </nav>
-    </div>
+    <!-- Featured Product Section -->
+    <section id="product" class="section">
+        <h2 class="section-title reveal">Featured Product — CfyBLE0</h2>
+        <div class="split-layout align-items-center">
+            <div class="mission-content reveal delay-100">
+                <p class="large-text">The <strong>CfyBLE0</strong> is a compact Bluetooth Low Energy module built for smart electronics and IoT applications.</p>
+                <p class="mt-4">It supports multiple communication and control interfaces for flexible product integration, making it the perfect brain for your next smart device.</p>
+                
+                <div class="mt-4">
+                    <h4 style="color: var(--accent); margin-bottom: 0.5rem; font-size: 1.1rem;">Designed for:</h4>
+                    <ul style="list-style: none; display: flex; flex-wrap: wrap; gap: 1rem;">
+                        <li style="background: var(--glass-bg); padding: 0.5rem 1rem; border-radius: 8px; border: 1px solid var(--glass-border);">Smart LED lights</li>
+                        <li style="background: var(--glass-bg); padding: 0.5rem 1rem; border-radius: 8px; border: 1px solid var(--glass-border);">Smart home devices</li>
+                        <li style="background: var(--glass-bg); padding: 0.5rem 1rem; border-radius: 8px; border: 1px solid var(--glass-border);">Wireless embedded systems</li>
+                        <li style="background: var(--glass-bg); padding: 0.5rem 1rem; border-radius: 8px; border: 1px solid var(--glass-border);">Low-power IoT products</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="glass-card reveal delay-200">
+                <h3 style="margin-bottom: 1rem; color: #fff;">Key Integrations</h3>
+                <div class="product-features" style="margin-top: 0;">
+                    <ul>
+                        <li>32-bit low-power MCU</li>
+                        <li>BLE 5.2 support</li>
+                        <li>PWM, UART, SPI, I2C, ADC interfaces</li>
+                        <li>Up to +10 dBm RF output</li>
+                        <li>Compact PCB antenna design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Chipify -->
+    <section id="why-chipify" class="section alt-bg">
+        <div class="split-layout">
+            <div class="mission-content reveal">
+                <h2 class="section-title left-align">Why Chipify?</h2>
+                <p class="large-text mb-4">We are dedicated to building robust and future-proof electronics.</p>
+                <div class="features-list">
+                    <ul>
+                        <li class="reveal delay-100"><span class="check">✅</span> Smart Embedded Solutions</li>
+                        <li class="reveal delay-200"><span class="check">✅</span> Wireless Innovation</li>
+                        <li class="reveal delay-300"><span class="check">✅</span> Reliable Electronics Design</li>
+                        <li class="reveal delay-400"><span class="check">✅</span> Efficient Low-Power Technology</li>
+                        <li class="reveal delay-400"><span class="check">✅</span> Future-Ready Development</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mission-content reveal delay-200" style="display: flex; flex-direction: column; justify-content: center;">
+                <h2 class="section-title left-align">Innovation Starts Here</h2>
+                <p class="large-text">At Chipify, we believe electronics should be smarter, more efficient, and built for the future.</p>
+                <a href="#contact" class="btn-primary mt-4 reveal delay-300" style="align-self: flex-start;">Start Innovating With Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Currently Building -->
+    <section id="building" class="section">
+        <h2 class="section-title reveal">Currently Building</h2>
+        <div class="grid cards-grid">
+            <div class="card glass-card reveal delay-100">
+                <div class="card-icon">📡</div>
+                <h3>BLE Modules</h3>
+                <p>BLE-enabled electronic modules designed for long range and low power consumption.</p>
+            </div>
+            <div class="card glass-card reveal delay-200">
+                <div class="card-icon">💡</div>
+                <h3>Smart Lighting</h3>
+                <p>Advanced smart lighting systems with intelligent controls and integrations.</p>
+            </div>
+            <div class="card glass-card reveal delay-300">
+                <div class="card-icon">📺</div>
+                <h3>LED Displays</h3>
+                <p>High-quality LED display technologies for commercial and personal applications.</p>
+            </div>
+            <div class="card glass-card reveal delay-400">
+                <div class="card-icon">⚡</div>
+                <h3>Embedded IoT</h3>
+                <p>Custom embedded IoT solutions for automation and connected ecosystems.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="section contact-section">
+        <div class="contact-box glass-card reveal">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="mb-4">We would love to hear from you. For business inquiries, collaborations, or technical discussions:</p>
+            <div class="contact-info">
+                <a href="mailto:yourmail@example.com" class="contact-link reveal delay-100">
+                    <span class="icon">📧</span> yourmail@example.com
+                </a>
+                <a href="tel:+91XXXXXXXXXX" class="contact-link reveal delay-200">
+                    <span class="icon">📞</span> +91-XXXXXXXXXX
+                </a>
+                <div class="contact-link reveal delay-300">
+                    <span class="icon">📍</span> India
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand reveal">
+                <img src="logo/Untitled (222 x 222 px).svg" alt="Chipify Logo" class="footer-logo">
+                <p class="footer-tagline">Innovating Electronics for the Next Generation. Building smart solutions for a connected world.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Twitter">𝕏</a>
+                    <a href="#" aria-label="LinkedIn">in</a>
+                    <a href="#" aria-label="GitHub">⌨</a>
+                </div>
+            </div>
+            
+            <div class="footer-nav">
+                <div class="footer-col reveal delay-100">
+                    <h4>Company</h4>
+                    <a href="#product">Product</a>
+                    <a href="#why-chipify">Why Chipify</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-col reveal delay-200">
+                    <h4>Legal</h4>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2026 Chipify. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Scroll Reveal Animation Initialization
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealCallback = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        };
+
+        const revealOptions = {
+            threshold: 0.15,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const revealObserver = new IntersectionObserver(revealCallback, revealOptions);
+
+        revealElements.forEach(el => revealObserver.observe(el));
+    </script>
 </body>
-
 </html>
