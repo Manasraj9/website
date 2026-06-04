@@ -1,15 +1,15 @@
 /* Base Styles & Typography */
 :root {
-    --bg-color: #0b022d; /* Very dark deep indigo/purple from background */
-    --bg-alt: #050212; /* Slightly darker for contrast */
-    --text-primary: #ffffff;
-    --text-secondary: #a39abc; /* Light greyish purple */
-    --accent: #4ade80; /* Bright mint green from the toggle and + button */
+    --bg-color: #ffffff; /* White background */
+    --bg-alt: #f8f9fa; /* Light grey for contrast */
+    --text-primary: #111827; /* Dark text */
+    --text-secondary: #4b5563; /* Medium grey */
+    --accent: #10b981; /* Bright mint green */
     --accent-purple: #7c3aed; /* Vibrant purple */
-    --accent-blue: #3b82f6; /* Blue from active bottom nav */
-    --glass-bg: #170d33; /* Solid dark purple for cards to match the app cards */
-    --glass-border: rgba(255, 255, 255, 0.05);
-    --glass-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    --accent-blue: #3b82f6; /* Blue */
+    --glass-bg: #ffffff; /* White cards */
+    --glass-border: rgba(0, 0, 0, 0.1);
+    --glass-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     --gradient-primary: linear-gradient(135deg, #7c3aed 0%, #4338ca 100%);
 }
 
@@ -56,14 +56,14 @@ a {
 .nav-content {
     max-width: 95%;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .nav-logo {
-    height: 90px;
+    height: 50px;
     width: auto;
 }
 
@@ -76,7 +76,7 @@ a {
 .nav-links a:not(.btn-primary) {
     font-size: 0.95rem;
     font-weight: 500;
-    color: var(--text-secondary);
+    color: #a39abc;
 }
 
 .nav-links a:not(.btn-primary):hover {
@@ -130,7 +130,7 @@ a {
     font-weight: 800;
     text-align: center;
     margin-bottom: 3rem;
-    background: linear-gradient(90deg, #fff, var(--text-secondary));
+    background: linear-gradient(90deg, var(--text-primary), var(--text-secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -258,7 +258,7 @@ a {
 .card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #fff;
+    color: var(--text-primary);
 }
 
 .card p {
@@ -278,7 +278,7 @@ a {
 .large-text {
     font-size: 1.35rem;
     line-height: 1.8;
-    color: rgba(255, 255, 255, 0.85);
+    color: var(--text-primary);
 }
 
 .features-list ul {
@@ -292,10 +292,10 @@ a {
     font-size: 1.2rem;
     display: flex;
     align-items: center;
-    background: rgba(255,255,255,0.03);
+    background: var(--glass-bg);
     padding: 1rem;
     border-radius: 12px;
-    border: 1px solid rgba(255,255,255,0.05);
+    border: 1px solid var(--glass-border);
 }
 
 .features-list .check {
@@ -417,7 +417,7 @@ a {
     justify-content: center;
     gap: 1rem;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--glass-bg);
     border-radius: 12px;
     font-size: 1.1rem;
 }
@@ -464,7 +464,7 @@ a {
 /* Modern Footer */
 .footer {
     padding: 5rem 2rem 2rem;
-    background: var(--bg-alt);
+    background: #0b022d;
     border-top: 1px solid var(--glass-border);
     position: relative;
     overflow: hidden;
@@ -500,7 +500,7 @@ a {
 }
 
 .footer-tagline {
-    color: var(--text-secondary);
+    color: #a39abc;
     font-size: 1.05rem;
     line-height: 1.8;
     margin-bottom: 2rem;
@@ -518,9 +518,9 @@ a {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: var(--glass-bg);
-    border: 1px solid var(--glass-border);
-    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
     font-size: 1.2rem;
     transition: all 0.3s ease;
 }
@@ -539,7 +539,7 @@ a {
 }
 
 .footer-col h4 {
-    color: #fff;
+    color: #ffffff;
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
     position: relative;
@@ -564,7 +564,7 @@ a {
 }
 
 .footer-col a {
-    color: var(--text-secondary);
+    color: #a39abc;
     font-size: 0.95rem;
     transition: color 0.2s ease, transform 0.2s ease;
 }
