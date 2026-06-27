@@ -3,10 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chipify - Passion For Innovation</title>
-    <meta name="description" content="Chipify develops smart embedded electronics and wireless solutions designed for the next generation of connected devices.">
+    <title>Delete Account & Data - Chipify</title>
+    <meta name="description" content="Request account and data deletion for Chipify services.">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-color);
+            font-family: inherit;
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(108, 99, 255, 0.2);
+        }
+        .btn-submit {
+            background-color: var(--danger-color, #ff4757);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        .btn-submit:hover {
+            background-color: #ff6b81;
+        }
+        .delete-box {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -26,24 +69,27 @@
         </div>
     </nav>
 
-
-
-    <!-- Contact Us -->
-    <section id="contact" class="section contact-section">
-        <div class="contact-box glass-card reveal">
-            <h2 class="section-title">Partner With Chipify</h2>
-            <p class="mb-4">We collaborate with OEMs, luminaire manufacturers, and electronics brands to build the future of IoT. Contact us for bulk orders, custom module development, or 'Chipify Ready' integration:</p>
-            <div class="contact-info">
-                <a href="mailto:yourmail@example.com" class="contact-link reveal delay-100">
-                    <span class="icon">📧</span> yourmail@example.com
-                </a>
-                <a href="tel:+91XXXXXXXXXX" class="contact-link reveal delay-200">
-                    <span class="icon">📞</span> +91-XXXXXXXXXX
-                </a>
-                <div class="contact-link reveal delay-300">
-                    <span class="icon">📍</span> India
+    <!-- Delete Account Section -->
+    <section id="delete-account" class="section">
+        <div class="delete-box glass-card reveal">
+            <h2 class="section-title" style="color: #ff4757;">Request Data Deletion</h2>
+            <p class="mb-4">Use the form below to request the deletion of your account and all associated personal data from our systems. This action is irreversible.</p>
+            
+            <form action="#" method="POST" id="deleteForm">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-control" required placeholder="Enter the email associated with your account">
                 </div>
-            </div>
+                <div class="form-group">
+                    <label for="reason">Reason for Deletion (Optional)</label>
+                    <textarea id="reason" name="reason" class="form-control" rows="4" placeholder="Please let us know why you are leaving..."></textarea>
+                </div>
+                <div class="form-group" style="display: flex; align-items: center; gap: 10px;">
+                    <input type="checkbox" id="confirm" name="confirm" required>
+                    <label for="confirm" style="margin-bottom: 0;">I understand that this will permanently delete my data.</label>
+                </div>
+                <button type="submit" class="btn-submit reveal delay-200">Submit Deletion Request</button>
+            </form>
         </div>
     </section>
 
@@ -98,15 +144,15 @@
             }));
         }
 
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+        // Form submission (placeholder)
+        const deleteForm = document.getElementById('deleteForm');
+        if(deleteForm) {
+            deleteForm.addEventListener('submit', function(e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                alert('Your request to delete data has been submitted. We will process it shortly.');
+                this.reset();
             });
-        });
+        }
 
         // Scroll Reveal Animation Initialization
         const revealElements = document.querySelectorAll('.reveal');
